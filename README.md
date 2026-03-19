@@ -60,9 +60,47 @@ o After finishing, click File > Exit to close Eclipse IDE.
 
 
 ## PROGRAM:
+```
+
+package mypack;
+import java.util.Scanner;
+
+public class LargestElement {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // Input array size
+        System.out.print("Enter the number of elements: ");
+        int n = sc.nextInt();
+
+        int[] arr = new int[n];
+
+        // Input array elements
+        System.out.println("Enter " + n + " numbers:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = sc.nextInt();
+        }
+
+        // Assume first element is the largest
+        int largest = arr[0];
+
+        // Compare with other elements
+        for (int i = 1; i < n; i++) {
+            if (arr[i] > largest) {
+                largest = arr[i];
+            }
+        }
+
+        // Output the result
+        System.out.println("The largest element is: " + largest);
+    }
+}
+
+```
 
 
 ## OUTPUT:
+<img width="1919" height="1019" alt="Screenshot 2025-08-19 175717" src="https://github.com/user-attachments/assets/e1c7b06e-86b2-4e85-b32b-f3c388649a95" />
 
 
 ## RESULT:
